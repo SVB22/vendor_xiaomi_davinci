@@ -1,6 +1,5 @@
 /**
- * Copyright (C) 2020 The LineageOS Project
- * Copyright (C) 2020 The PixelExperience Project
+ * Copyright (C) 2020 The MSM-Xtended Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -121,7 +120,7 @@ android_app_import {
 	name: "TimeService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: ":timeservice_app_cert",
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
