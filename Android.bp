@@ -157,14 +157,14 @@ android_app_import {
 
 android_app_import {
 	name: "ims",
-	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/ims/ims.apk",
-	certificate: "platform",
+	owner: "qcom",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -183,6 +183,13 @@ dex_import {
 	name: "WfdCommon",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/WfdCommon.jar"],
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "qcom",
+	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
+	system_ext_specific: true,
 }
 
 prebuilt_etc_xml {
